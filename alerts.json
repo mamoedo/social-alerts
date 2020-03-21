@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Instagram",
+    "type": "instagram",
+    "frequency": 3600,
+    "users": [
+      "marca",
+      "atleticodemadrid"
+    ],
+    "mail_list": [
+      "example1@mail.com",
+      "example2@mail.com"
+    ]
+  },
+  {
+    "name": "HongKong Disturbs",
+    "users": [
+      "free_hk",
+      "riots_hk",
+      "united_protestors_hk",
+      "annonymous_hk"
+    ],
+    "whitelist": {
+      "regex": "\\W{}(?=\\W)",
+      "list": [
+        "attack",
+        "block",
+        "protest",
+        "meet",
+        "destroy"
+      ]
+    },
+    "blacklist": {
+      "regex": "",
+      "list": [
+        "peaceful",
+        "love"
+      ]
+    },
+    "retweets": false,
+    "replies": true,
+    "type": "twitter",
+    "mail_list": [
+      "example1@mail.com",
+      "example2@mail.com"
+    ]
+  },
+  {
+    "name": "Social Media Breaches",
+    "users": [
+      "facebook",
+      "twitter",
+      "instagram",
+      "snapchat"
+    ],
+    "whitelist": {
+      "regex": "",
+      "list": [
+        "breach",
+        "leak",
+        "data",
+        "privacy",
+        "censored"
+      ]
+    },
+    "blacklist": {
+      "regex": "",
+      "list": [
+        "feature"
+      ]
+    },
+    "retweets": true,
+    "replies": false,
+    "type": "twitter",
+    "frequency": 3600,
+    "mail_list": [
+      "example3@mail.com"
+    ]
+  },
+  {
+    "name": "CVE feed",
+    "users": [
+      "cvenew",
+      "vulmonfeeds"
+    ],
+    "whitelist": {
+      "regex": "",
+      "list": [
+        "vcenter",
+        "windows",
+        "oracle",
+        "ms sql",
+        "postgresql",
+        "dynamics",
+        "centos",
+        "vsftp",
+        "ubuntu",
+        "mysql",
+        "nagios",
+        "zmq",
+        "docker",
+        "openldap",
+        "jenkins",
+        "sonar",
+        "eclipse",
+        "visual studio",
+        "azure",
+        "soap"
+      ]
+    },
+    "blacklist": {
+      "regex": "",
+      "list": [
+        "issue"
+      ]
+    },
+    "retweets": true,
+    "replies": false,
+    "type": "twitter",
+    "mail_list": [
+      "example4@mail.com"
+    ]
+  }
+]
