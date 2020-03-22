@@ -1,3 +1,10 @@
+[![module-twitter](https://img.shields.io/badge/module-Twitter-00aced)](https://www.twitter.com/)
+[![module-instagram](https://img.shields.io/badge/module-Instagram-bc2a8d)](https://www.instagram.com/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![python-version](https://img.shields.io/badge/python-3.5%20|%203.6%20|%203.7%20|%203.8-blue)](https://www.python.org/download/releases/3.0/)
+[![license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://github.com/mamoedo/social-alerts/blob/master/LICENSE.md)
+[![open-source-love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://opensource.guide/)
+
 # Social Alerts
 
 Get notified instantly when your users of interest speak about something.
