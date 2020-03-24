@@ -22,6 +22,14 @@ class InstagramUserFeed:
         self.recent_media = feed.get('media', None)
         self.recent_media_ids = feed.get('media_ids', None)
 
+    def get_image_url(self):
+        if self.recent_media:
+            return self.recent_media[0]['image']
+
+    def get_caption(self):
+        if self.recent_media:
+            return self.recent_media[0]['caption']
+
 
 def setup_periodic_scrape():
     for alert in get_alerts_by_type(TYPE_INSTA):
@@ -45,7 +53,7 @@ def populate_feeds():
 
 
 def new_posts(feed):
-    if feed.recent_media_ids is None or __users_feeds[feed.userid].recent_media_ids is None and \
+    if feed.recent_media_ids is None or __users_feeds[feed.userid].recent_media_ids is None or \
             feed.recent_media_ids == __users_feeds[feed.userid].recent_media_ids:
         log.info("No changes detected for user {}".format(feed.username))
     else:

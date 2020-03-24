@@ -101,7 +101,8 @@ def send_instagram_notification(feed, alert):
     message = MIMEMultipart("alternative")
     message['Subject'] = INSTA_EMAIL_SUBJECT.format(alert.name, feed.username)
     message['From'] = config.sender_mail_address
-    body = INSTA_EMAIL_BODY.format(image_url=feed.recent_media[0]['image'], caption=feed.recent_media[0]['caption'])
+    body = INSTA_EMAIL_BODY.format(user=feed.username, image_url=feed.get_image_url(), caption=feed.get_caption(),
+                                   date=time.asctime())
     message.attach(MIMEText(body, 'html', 'utf-8'))
     for email in alert.mail_list:
         send_email(email, message)
